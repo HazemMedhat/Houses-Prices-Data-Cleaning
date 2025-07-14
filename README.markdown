@@ -31,18 +31,15 @@ The notebook focuses on loading and preparing a housing dataset for analysis. Th
      - `median_income`: Median income of residents
      - `median_house_value`: Median house value (target variable)
 
-## Notes
-- The dataset appears to have missing values (e.g., `NaN` in `housing_median_age` and `population` for some rows), which may require further cleaning steps such as imputation or removal.
-- The notebook includes a deprecated warning related to the `interpolation` argument in NumPy's `percentile` function, suggesting a need to update to `method` for compatibility with newer NumPy versions.
+4. **Data Cleaning**  
+   - drop nulls from columns that have small percentage.
+   - fill other columns null with diffrent imputations approaches
+   - Remove Outliers using diffrent techniques 
+     
+
 
 ## Usage
 To run the notebook:
 1. Ensure you have access to the dataset file (`housing2.csv`) in the specified Google Drive path.
 2. Install required libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, and `missingno`.
 3. Run the notebook in a Jupyter environment (e.g., Google Colab) with Google Drive mounted.
-
-## Future Work
-- Handle missing values in the dataset (e.g., using imputation or dropping rows).
-- Address the NumPy deprecation warning by updating the `percentile` function call.
-- Perform additional data cleaning, such as outlier detection and handling.
-- Conduct exploratory data analysis (EDA) to understand relationships between features and the target variable (`median_house_value`).
